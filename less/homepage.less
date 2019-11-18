@@ -1,4 +1,15 @@
+@import url("https://fonts.googleapis.com/css?family=Permanent+Marker&display=swap");
+
 .home-container {
+  .mission-statement {
+    display: flex;
+    justify-content: space-evenly;
+
+    img {
+      max-width: 100%;
+      height: auto;
+    }
+  }
   .hero {
     width: 100vw;
     height: 100vh;
@@ -13,8 +24,9 @@
     color: white; /* ADD THIS LINE */
 
     /* Background styles */
-    background-image: url('../images/luncher.jpg');
-     background-image: linear-gradient(rgba(0, 0, 0, 0.5),rgba(0, 0, 0, 0.5)), url('../images/luncher.jpg');
+    background-image: url("../images/luncher.jpg");
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+      url("../images/luncher.jpg");
     background-size: cover;
     background-position: center center;
     background-repeat: no-repeat;
@@ -34,9 +46,10 @@
       color: white; /* CHANGE THIS LINE */
       text-decoration: none;
       font-size: 1.5em;
+      background-color: @color5;
 
       /* Border styles */
-      border: 3px solid white; /* CHANGE THIS LINE */
+      border: 3px solid @color4; /* CHANGE THIS LINE */
       border-radius: 20px;
     }
   }

@@ -5,6 +5,13 @@ body {
   margin: 0;
   font-family: sans-serif;
 }
+@font-face {
+  font-family: 'Permanent Marker';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: local('Permanent Marker Regular'), local('PermanentMarker-Regular'), url(https://fonts.gstatic.com/s/permanentmarker/v9/Fh4uPib9Iyv2ucM6pGQMWimMp004La2Ceg.ttf) format('truetype');
+}
 .header {
   width: auto;
   display: flex;
@@ -12,10 +19,26 @@ body {
   align-items: center;
 }
 .header h1 {
-  margin-left: 20%;
+  padding-left: 40px;
+  color: #123C69;
+  font-family: 'Permanent Marker', cursive;
 }
 .header nav {
-  margin-right: 3%;
+  padding-right: 40px;
+  color: #AC3B61;
+  font-family: 'Permanent Marker', cursive;
+}
+.header a {
+  text-decoration: none;
+  justify-content: space-evenly;
+}
+.home-container .mission-statement {
+  display: flex;
+  justify-content: space-evenly;
+}
+.home-container .mission-statement img {
+  max-width: 100%;
+  height: auto;
 }
 .home-container .hero {
   width: 100vw;
@@ -29,8 +52,8 @@ body {
   color: white;
   /* ADD THIS LINE */
   /* Background styles */
-  background-image: url('../images/luncher.jpg');
-  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('../images/luncher.jpg');
+  background-image: url("../images/luncher.jpg");
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../images/luncher.jpg");
   background-size: cover;
   background-position: center center;
   background-repeat: no-repeat;
@@ -50,8 +73,9 @@ body {
   /* CHANGE THIS LINE */
   text-decoration: none;
   font-size: 1.5em;
+  background-color: #AC3B61;
   /* Border styles */
-  border: 3px solid white;
+  border: 3px solid #123C69;
   /* CHANGE THIS LINE */
   border-radius: 20px;
 }
