@@ -52,13 +52,37 @@ body {
 .header .left {
   text-align: left;
 }
+.header i {
+  font-size: 2.5rem;
+  padding: 8px;
+}
+.home-container .district-pick {
+  display: flex;
+}
+.home-container .geoHeader {
+  text-align: center;
+  padding: auto;
+  font-size: 3rem;
+  color: #123C69;
+  background-color: #AC3B61;
+}
 .home-container .mission-statement {
   display: flex;
-  justify-content: space-evenly;
+  justify-content: space-around;
 }
 .home-container .mission-statement img {
   max-width: 100%;
   height: auto;
+}
+.home-container .mission-statement .textBox {
+  margin: 2%;
+  padding: 5px;
+}
+.home-container .mission-statement .textBox h1 {
+  font-size: 3rem;
+}
+.home-container .mission-statement .textBox p {
+  font-size: 2rem;
 }
 .home-container .hero {
   width: 100vw;
@@ -98,4 +122,10 @@ body {
   border: 3px solid #123C69;
   /* CHANGE THIS LINE */
   border-radius: 20px;
+}
+.home-container .hero .inner-hero h1 {
+  font-size: 5.2rem;
+}
+.home-container .hero .inner-hero h2 {
+  font-size: 2rem;
 }
