@@ -1,9 +1,9 @@
-html {
-  background-color: #EDC7B7;
-}
-body {
-  margin: 0;
-  font-family: sans-serif;
+@font-face {
+  font-family: 'Alata';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: local('Alata Regular'), local('Alata-Regular'), url(https://fonts.gstatic.com/s/alata/v1/PbytFmztEwbIoce9zqM.ttf) format('truetype');
 }
 @font-face {
   font-family: 'Permanent Marker';
@@ -12,25 +12,45 @@ body {
   font-display: swap;
   src: local('Permanent Marker Regular'), local('PermanentMarker-Regular'), url(https://fonts.gstatic.com/s/permanentmarker/v9/Fh4uPib9Iyv2ucM6pGQMWimMp004La2Ceg.ttf) format('truetype');
 }
+html {
+  background-color: #EDC7B7;
+  font-size: 62.5%;
+}
+body {
+  margin: 0;
+  font-family: 'Alata', sans-serif;
+}
 .header {
   width: auto;
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
   align-items: center;
 }
 .header h1 {
-  padding-left: 40px;
   color: #123C69;
   font-family: 'Permanent Marker', cursive;
+  font-size: 4rem;
 }
-.header nav {
+.header .nav {
   padding-right: 40px;
   color: #AC3B61;
-  font-family: 'Permanent Marker', cursive;
+  font-family: 'Alata', sans-serif;
 }
 .header a {
   text-decoration: none;
-  justify-content: space-evenly;
+  font-size: 20px;
+  padding: 16px;
+  display: inline-block;
+  font-size: 2rem;
+}
+.header .middle {
+  text-align: center;
+}
+.header .right {
+  text-align: right;
+}
+.header .left {
+  text-align: left;
 }
 .home-container .mission-statement {
   display: flex;

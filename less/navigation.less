@@ -1,29 +1,40 @@
-@import url('https://fonts.googleapis.com/css?family=Permanent+Marker&display=swap');
-.header{
-
-  width:auto;
+@import url("https://fonts.googleapis.com/css?family=Permanent+Marker&display=swap");
+.header {
+  width: auto;
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
   align-items: center;
 
-  h1{
-  padding-left: 40px;
-  color: @color4;
-  font-family: 'Permanent Marker', cursive;
+  h1 {
 
-
+    color: @color4;
+    font-family: @logoFont;
+    font-size: 4rem;
   }
-  nav{
+  .nav {
     padding-right: 40px;
-    color:@color5;
-    font-family: 'Permanent Marker', cursive;
-
+    color: @color5;
+    font-family: @textOne;
   }
 
-  a{
+  a {
     text-decoration: none;
-    justify-content: space-evenly;
-
+    font-size: 20px;
+    padding: 16px;
+    display: inline-block;
+    font-size: 2rem;
   }
+  .middle {
+  text-align: center;
+}
 
+.right {
+  text-align: right;
+
+}
+
+.left{
+  text-align:left;
+
+}
 }
