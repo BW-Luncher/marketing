@@ -1,0 +1,114 @@
+@import url("https://fonts.googleapis.com/css?family=Permanent+Marker&display=swap");
+
+.home-container {
+  button{
+    display: flex;
+justify-content: center;
+
+
+.custom-btn(@color4, 250px, white);
+  }
+
+  .district-pick{
+    display: flex;
+    justify-content: space-between;
+
+    .district{
+      padding:4%;
+      padding-top: 1%;
+      h4{
+        font-size: 2.2rem;
+      }
+      p{
+        font-size:1.4rem;
+      }
+    }
+
+  }
+  .geoHeader{
+    text-align: center;
+    padding:auto;
+    font-size: 3rem;
+    color: @color4;
+    background-color: @color5;
+
+  }
+  .mission-statement {
+    display: flex;
+    justify-content: space-around;
+
+
+    img {
+      max-width: 100%;
+      height: auto;
+
+    }
+    .textBox{
+      margin:2%;
+      padding: 5px;
+      h1{
+        font-size: 3rem;
+      }
+      p{
+        font-size: 1.8rem;
+      }
+    }
+
+  }
+  .hero {
+    width: 100vw;
+    height: 100vh;
+
+    /* Flexbox stuff */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    /* Text styles */
+    text-align: center;
+    color: white; /* ADD THIS LINE */
+
+    /* Background styles */
+    background-image: url("../images/luncher.jpg");
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+      url("../images/luncher.jpg");
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+
+    .button {
+      /* Positioning and sizing */
+      display: block;
+      width: 200px;
+      /* Padding and margins */
+      padding: 1em;
+      margin-top: 50px;
+      margin-left: auto;
+      margin-right: auto;
+
+      /* Text styles */
+      color: white; /* CHANGE THIS LINE */
+      text-decoration: none;
+      font-size: 1.5em;
+      background-color: @color5;
+
+      /* Border styles */
+      border: 3px solid @color4; /* CHANGE THIS LINE */
+      border-radius: 20px;
+
+    }
+    .button:hover{
+      background-color: @color3;
+    }
+    .inner-hero{
+      h1{
+        font-size: 5.2rem;
+      }
+      h2{
+        font-size: 2.0rem
+      }
+    }
+
+  }
+}

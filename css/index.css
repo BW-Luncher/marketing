@@ -1,0 +1,213 @@
+@font-face {
+  font-family: 'Alata';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: local('Alata Regular'), local('Alata-Regular'), url(https://fonts.gstatic.com/s/alata/v1/PbytFmztEwbIoce9zqM.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Permanent Marker';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: local('Permanent Marker Regular'), local('PermanentMarker-Regular'), url(https://fonts.gstatic.com/s/permanentmarker/v9/Fh4uPib9Iyv2ucM6pGQMWimMp004La2Ceg.ttf) format('truetype');
+}
+html {
+  background-color: #EDC7B7;
+  font-size: 62.5%;
+}
+body {
+  margin: 0;
+  font-family: 'Alata', sans-serif;
+}
+.header {
+  width: auto;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.header h1 {
+  color: #123C69;
+  font-family: 'Permanent Marker', cursive;
+  font-size: 4rem;
+}
+.header .nav {
+  padding-right: 40px;
+  color: #AC3B61;
+  font-family: 'Alata', sans-serif;
+}
+.header a {
+  text-decoration: none;
+  font-size: 20px;
+  padding: 16px;
+  display: inline-block;
+  font-size: 2rem;
+}
+.header .middle {
+  text-align: center;
+}
+.header .right {
+  text-align: right;
+}
+.header .left {
+  text-align: left;
+}
+.header i {
+  font-size: 2.5rem;
+  padding: 8px;
+}
+footer p {
+  display: flex;
+  justify-content: center;
+}
+.home-container button {
+  display: flex;
+  justify-content: center;
+  display: block;
+  background-color: #123C69;
+  margin: 0;
+  cursor: pointer;
+  width: 250px;
+  height: 45px;
+  font-size: 2rem;
+  border-radius: 10px;
+  color: white;
+}
+.home-container button:hover {
+  background-color: #AC3B61;
+}
+.home-container .district-pick {
+  display: flex;
+  justify-content: space-between;
+}
+.home-container .district-pick .district {
+  padding: 4%;
+  padding-top: 1%;
+}
+.home-container .district-pick .district h4 {
+  font-size: 2.2rem;
+}
+.home-container .district-pick .district p {
+  font-size: 1.4rem;
+}
+.home-container .geoHeader {
+  text-align: center;
+  padding: auto;
+  font-size: 3rem;
+  color: #123C69;
+  background-color: #AC3B61;
+}
+.home-container .mission-statement {
+  display: flex;
+  justify-content: space-around;
+}
+.home-container .mission-statement img {
+  max-width: 100%;
+  height: auto;
+}
+.home-container .mission-statement .textBox {
+  margin: 2%;
+  padding: 5px;
+}
+.home-container .mission-statement .textBox h1 {
+  font-size: 3rem;
+}
+.home-container .mission-statement .textBox p {
+  font-size: 1.8rem;
+}
+.home-container .hero {
+  width: 100vw;
+  height: 100vh;
+  /* Flexbox stuff */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* Text styles */
+  text-align: center;
+  color: white;
+  /* ADD THIS LINE */
+  /* Background styles */
+  background-image: url("../images/luncher.jpg");
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../images/luncher.jpg");
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+.home-container .hero .button {
+  /* Positioning and sizing */
+  display: block;
+  width: 200px;
+  /* Padding and margins */
+  padding: 1em;
+  margin-top: 50px;
+  margin-left: auto;
+  margin-right: auto;
+  /* Text styles */
+  color: white;
+  /* CHANGE THIS LINE */
+  text-decoration: none;
+  font-size: 1.5em;
+  background-color: #AC3B61;
+  /* Border styles */
+  border: 3px solid #123C69;
+  /* CHANGE THIS LINE */
+  border-radius: 20px;
+}
+.home-container .hero .button:hover {
+  background-color: #BAB2B5;
+}
+.home-container .hero .inner-hero h1 {
+  font-size: 5.2rem;
+}
+.home-container .hero .inner-hero h2 {
+  font-size: 2rem;
+}
+.home-container-about .hero-about {
+  width: 100vw;
+  height: 100vh;
+  /* Flexbox stuff */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* Text styles */
+  text-align: center;
+  color: white;
+  /* ADD THIS LINE */
+  /* Background styles */
+  background-image: url("../images/aboutHero.jpg");
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../images/abouthero.jpg");
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+.home-container-about .hero-about .button {
+  /* Positioning and sizing */
+  display: block;
+  width: 200px;
+  /* Padding and margins */
+  padding: 1em;
+  margin-top: 50px;
+  margin-left: auto;
+  margin-right: auto;
+  /* Text styles */
+  color: white;
+  /* CHANGE THIS LINE */
+  text-decoration: none;
+  font-size: 1.5em;
+  background-color: #AC3B61;
+  /* Border styles */
+  border: 3px solid #123C69;
+  /* CHANGE THIS LINE */
+  border-radius: 20px;
+}
+.home-container-about .hero-about .button:hover {
+  background-color: #BAB2B5;
+}
+.home-container-about .hero-about .inner-hero-about h1 {
+  font-size: 5.2rem;
+}
+.home-container-about .hero-about .inner-hero-about h2 {
+  font-size: 2rem;
+}
