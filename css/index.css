@@ -214,6 +214,54 @@ div.homeButton {
   justify-content: center;
   align-items: center;
 }
+.district {
+  width: 100vw;
+  height: 36vh;
+  /* Flexbox stuff */
+  /* Text styles */
+  text-align: center;
+  color: white;
+  /* ADD THIS LINE */
+  /* Background styles */
+  background-image: url("../images/luncher.jpg");
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../images/luncher.jpg");
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+.app-statement {
+  display: flex;
+  justify-content: space-around;
+}
+@media (max-width: 500px) {
+  .app-statement {
+    flex-direction: column;
+  }
+}
+@media (max-width: 800px) {
+  .app-statement {
+    flex-direction: column;
+  }
+}
+.app-statement img {
+  max-width: 100%;
+  height: auto;
+}
+.app-statement .textBox {
+  margin: 2%;
+  padding: 5px;
+}
+.app-statement .textBox h1 {
+  font-size: 3rem;
+}
+.app-statement .textBox p {
+  font-size: 1.8rem;
+}
+.sig {
+  font-family: 'Permanent Marker', cursive;
+  font-size: 3rem;
+}
 .home-container-about .team {
   margin: 30px 0;
   display: flex;
