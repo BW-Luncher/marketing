@@ -26,6 +26,11 @@ body {
   justify-content: space-around;
   align-items: center;
 }
+@media (max-width: 500px) {
+  .header {
+    flex-direction: column;
+  }
+}
 .header h1 {
   color: #123C69;
   font-family: 'Permanent Marker', cursive;
@@ -45,6 +50,11 @@ body {
 }
 .header .middle {
   text-align: center;
+}
+@media (max-width: 500px) {
+  .header .middle {
+    flex-direction: column;
+  }
 }
 .header .right {
   text-align: right;
@@ -79,6 +89,13 @@ footer p {
 .home-container .district-pick {
   display: flex;
   justify-content: space-between;
+  align-items: center;
+}
+@media (max-width: 500px) {
+  .home-container .district-pick {
+    flex-direction: column;
+    text-align: center;
+  }
 }
 .home-container .district-pick .district {
   padding: 4%;
@@ -86,9 +103,11 @@ footer p {
 }
 .home-container .district-pick .district h4 {
   font-size: 2.2rem;
+  text-align: center;
 }
 .home-container .district-pick .district p {
   font-size: 1.4rem;
+  text-align: center;
 }
 .home-container .geoHeader {
   text-align: center;
@@ -100,6 +119,11 @@ footer p {
 .home-container .mission-statement {
   display: flex;
   justify-content: space-around;
+}
+@media (max-width: 500px) {
+  .home-container .mission-statement {
+    flex-direction: column;
+  }
 }
 .home-container .mission-statement img {
   max-width: 100%;
@@ -163,15 +187,27 @@ footer p {
 .home-container .hero .inner-hero h2 {
   font-size: 2rem;
 }
+div.homeButton {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 .home-container-about .team {
   margin: 30px 0;
   display: flex;
+  justify-content: space-evenly;
   flex-wrap: wrap;
-  justify-content: space-around;
+}
+@media (max-width: 500px) {
+  .home-container-about .team {
+    flex-direction: column;
+  }
 }
 .home-container-about .team .dev {
   text-align: center;
   align-items: center;
+  padding-top: 15px;
+  padding-bottom: 15px;
 }
 .home-container-about .team .dev h4 {
   font-size: 2.2rem;
@@ -241,4 +277,9 @@ footer p {
 }
 .home-container-about .hero-about .inner-hero-about h2 {
   font-size: 2rem;
+}
+.aboutButton {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
