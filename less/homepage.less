@@ -44,11 +44,16 @@ justify-content: center;
     font-size: 3rem;
     color: @color4;
     background-color: @color5;
+    h2{
+      margin:0;
+    }
 
   }
   .mission-statement {
     display: flex;
     justify-content: space-around;
+    border-top: 1px solid black;
+
     @media @mobile{
       flex-direction: column;
     }
@@ -169,11 +174,14 @@ div.homeButton{
 .app-statement{
   display: flex;
   justify-content: space-around;
+  border-top: 1px solid black;
+  border-bottom: 1px solid black;
   @media @mobile{
-    flex-direction: column;
+    flex-direction: column-reverse;
+
   }
   @media @tablet{
-    flex-direction: column;
+    flex-direction: column-reverse;
 
 
   }
@@ -187,6 +195,7 @@ div.homeButton{
   .textBox{
     margin:2%;
     padding: 5px;
+
     h1{
       font-size: 3rem;
     }

@@ -133,9 +133,13 @@ footer p {
   color: #123C69;
   background-color: #AC3B61;
 }
+.home-container .geoHeader h2 {
+  margin: 0;
+}
 .home-container .mission-statement {
   display: flex;
   justify-content: space-around;
+  border-top: 1px solid black;
 }
 @media (max-width: 500px) {
   .home-container .mission-statement {
@@ -233,15 +237,17 @@ div.homeButton {
 .app-statement {
   display: flex;
   justify-content: space-around;
+  border-top: 1px solid black;
+  border-bottom: 1px solid black;
 }
 @media (max-width: 500px) {
   .app-statement {
-    flex-direction: column;
+    flex-direction: column-reverse;
   }
 }
 @media (max-width: 800px) {
   .app-statement {
-    flex-direction: column;
+    flex-direction: column-reverse;
   }
 }
 .app-statement img {
