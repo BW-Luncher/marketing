@@ -115,7 +115,6 @@ footer p {
   }
 }
 .home-container .district-pick .district {
-  padding: 4%;
   padding-top: 1%;
 }
 .home-container .district-pick .district h4 {
@@ -166,7 +165,6 @@ footer p {
   font-size: 1.8rem;
 }
 .home-container .hero {
-  width: 100vw;
   height: 100vh;
   /* Flexbox stuff */
   display: flex;
@@ -219,7 +217,6 @@ div.homeButton {
   align-items: center;
 }
 .district {
-  width: 100vw;
   height: 36vh;
   /* Flexbox stuff */
   /* Text styles */
@@ -268,6 +265,12 @@ div.homeButton {
   font-family: 'Permanent Marker', cursive;
   font-size: 3rem;
 }
+a:hover {
+  text-decoration: none;
+}
+a {
+  text-decoration: none;
+}
 .home-container-about .team {
   margin: 30px 0;
   display: flex;
@@ -312,7 +315,6 @@ div.homeButton {
   background-color: #AC3B61;
 }
 .home-container-about .hero-about {
-  width: 100vw;
   height: 100vh;
   /* Flexbox stuff */
   display: flex;
